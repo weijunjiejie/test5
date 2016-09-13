@@ -46,12 +46,12 @@ public class UserExample {
 
     public Criteria createCriteria() {
         Criteria criteria = createCriteriaInternal();
-        if (oredCriteria.size() == 0) {
+        if (oredCriteria.size() == 0) {  
             oredCriteria.add(criteria);
         }
         return criteria; 
     }
-
+ 
     protected Criteria createCriteriaInternal() {
         Criteria criteria = new Criteria();
         return criteria;
