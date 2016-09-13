@@ -38,7 +38,7 @@ public class UserExample {
         oredCriteria.add(criteria);
     }
 
-    public Criteria or() {
+    public Criteria or() { 
         Criteria criteria = createCriteriaInternal();
         oredCriteria.add(criteria);
         return criteria;
