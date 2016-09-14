@@ -4,16 +4,16 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
 	id="WebApp_ID" version="3.0">
 	<display-name>hyyf</display-name>
-
+<!-- Spring和mybatis的配置文件 -->
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>classpath:spring/spring-mybatis.xml</param-value>
 	</context-param>
-
+<!-- Spring监听器 -->
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
-
+<!-- Spring MVC servlet -->
 	<servlet>
 		<servlet-name>springmvc</servlet-name>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
@@ -24,6 +24,7 @@
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>springmvc</servlet-name>
+		 <!-- 此处可以可以配置成*.do，对应struts的后缀习惯 -->
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 	<welcome-file-list>

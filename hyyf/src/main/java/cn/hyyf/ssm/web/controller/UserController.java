@@ -17,7 +17,7 @@ public class UserController {
    @Autowired 
    private UserService userService;  
      
-   @RequestMapping("/showUser.action")  
+   @RequestMapping("/showUser")  
    public String toIndex(HttpServletRequest request,Model model){  
 //       int userId = Integer.parseInt(request.getParameter("id"));  
 	   int userId = 1;
