@@ -23,6 +23,6 @@ public class UserController {
 	   int userId = 1;
        User user = this.userService.getUserById(userId);  
        model.addAttribute("user", user);  
-       return "index";  
+       return "index";      
    }
 }  
